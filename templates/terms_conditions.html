@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSport</title>
+    {% comment %} <link rel="stylesheet" href="{% static 'style.css' %}" > {% endcomment %}
+
+</head>
+
+<style>
+.about-section {
+  text-align: center;
+  margin:100px 0px 100px 0px;  
+}
+
+.about-section img {
+width:50%;  
+}
+
+.privacy-policy {
+  
+}
+
+.privacy-policy h2 {
+  font-size:25px;
+}
+
+.privacy-policy p {
+ font-size:16px; 
+}
+</style>
+<body>
+    <div class="about-section">
+      <img src="{% static 'logo.png' %}"   class="responsive" />
+      </div>
+      <div class="privacy-policy">
+       <h2>Terms And Conditions</h2>
+        <p>{{ data }}</p>
+      </div>
+</body>
+</html>
